@@ -1,5 +1,8 @@
-$body-color: blue;
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@import "header.component";
+@import "main.component";
 
 body {
-  color: $body-color;
+  margin: 0;
 }
