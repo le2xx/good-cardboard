@@ -1,14 +1,14 @@
 .header {
 
   &__menu-items {
-    background-color: #373737;
+    background-color: $fogging;
     height: 44px;
     margin-bottom: 15px;
     padding-top: 7px;
   }
 
   &__menu-item {
-    color: #fff;
+    color: $white;
     display: inline-block;
     font-size: 12px;
     font-weight: 400;
@@ -18,13 +18,13 @@
     vertical-align: middle;
 
     &:hover {
-      color: #fff;
+      color: $white;
       text-decoration: none;
     }
   }
 
   &__item-separator {
-    background-color: #fff;
+    background-color: $white;
     display: inline-block;
     height: 25px;
     margin: 0 14px;
@@ -43,8 +43,12 @@
     width: 191px;
   }
 
+  &__phones {
+    padding-left: 60px;
+  }
+
   &__phone {
-    color: #373737;
+    color: $fogging;
     display: inline-block;
     font-size: 22px;
     font-weight: 500;
@@ -54,25 +58,25 @@
     vertical-align: middle;
 
     &:hover {
-      color: #373737;
+      color: $fogging;
       text-decoration: none;
     }
   }
 
   &__phone-separator {
-    background-color: #000;
+    background-color: $black;
     display: inline-block;
     height: 32px;
-    margin: 0 14px;
+    margin: 0 10px;
     opacity: .2;
     vertical-align: middle;
     width: 1px;
   }
 
   &__btn-call {
-    background-color: #ff9d00;
+    background-color: $btn-color;
     border-radius: 5px;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -96,7 +100,7 @@
     }
 
     &:hover {
-      background-color: lighten(#ff9d00, 10%);
+      background-color: lighten($btn-color, 10%);
     }
   }
 }

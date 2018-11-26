@@ -1,5 +1,5 @@
 .main {
-  background: #fff url('../../public/img/main_ground.jpg') center no-repeat;
+  background: $white url('../../public/img/main_ground.jpg') center no-repeat;
   height: 530px;
   max-width: 100%;
   padding-top: 65px;
@@ -7,7 +7,7 @@
   z-index: 0;
 
   &::before {
-    background-color: #373737;
+    background-color: $fogging;
     content: '';
     display: block;
     height: 100%;
@@ -23,12 +23,12 @@
     position: relative;
 
     &::before {
-      border: 1px solid #fff;
+      border: 1px solid $white;
       border-radius: 50%;
       content: '';
       display: block;
       height: 390px;
-      left: -7px;
+      left: 94px;
       position: absolute;
       top: 15px;
       width: 390px;
@@ -39,37 +39,42 @@
   &__img {
     background: url('../../public/img/boxes.png') no-repeat;
     height: 405px;
+    left: -4px;
     position: relative;
-    transform: translateX(-105px);
     width: 488px;
     z-index: 2;
   }
 
   &__title {
-    color: #fff;
+    color: $white;
     font-size: 41px;
     font-weight: 700;
     line-height: 42px;
+    margin-bottom: 3px;
   }
 
   &__delivery {
-    color: #fff;
+    color: $white;
     font-size: 28px;
     font-weight: 400;
     line-height: 42px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__form-block {
+    padding-left: 17px;
   }
 
   &__form {
-    border-radius: 5px;
     height: 240px;
-    padding: 30px 0 20px 27px;
+    padding: 21px 0 20px 28px;
     position: relative;
     width: 535px;
     z-index: 0;
 
     &::before {
-      background-color: #fff;
+      background-color: $white;
+      border-radius: 3px;
       content: '';
       display: block;
       height: 100%;
@@ -83,23 +88,24 @@
   }
 
   &__form-title {
-    color: #fff;
+    color: $white;
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
+    margin-bottom: 0;
   }
 
   &__form-bonus {
-    color: #fff;
+    color: $white;
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     text-transform: uppercase;
   }
 
   &__input {
-    background-color: #fff;
+    background-color: $white;
     border-radius: 5px;
     color: #373737;
     cursor: text;
@@ -109,16 +115,16 @@
     height: 56px;
     line-height: 14px;
     margin-bottom: 12px;
-    margin-right: 10px;
+    margin-right: 6px;
     padding: 21px 0 0 19px;
     vertical-align: middle;
     width: 311px;
   }
 
   &__submit {
-    background-color: #ff9d00;
+    background-color: $btn-color;
     border-radius: 5px;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -131,14 +137,15 @@
     width: 161px;
 
     &:hover {
-      background-color: lighten(#ff9d00, 10%);
+      background-color: lighten($btn-color, 10%);
     }
   }
 
   &__note {
-    color: #fff;
+    color: $white;
     font-size: 14px;
     font-weight: 300;
     line-height: 14px;
+    margin-left: 19px;
   }
 }

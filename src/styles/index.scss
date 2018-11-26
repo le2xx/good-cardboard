@@ -1,8 +1,8 @@
-@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-@import "header.component";
-@import "main.component";
-@import "modal.component";
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import 'variables';
+@import 'header.component';
+@import 'main.component';
+@import 'modal.component';
 
 body {
   margin: 0;
