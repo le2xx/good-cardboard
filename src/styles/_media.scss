@@ -1,0 +1,225 @@
+@media (max-width: 1200px) {
+  .main__box {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__menu-item {
+    font-size: 10px;
+  }
+
+  .header__item-separator {
+    height: 20px;
+    margin: 5px;
+  }
+
+  .logo-block__phones {
+    padding-left: 0;
+  }
+
+  .logo-block__phone {
+    display: block;
+    font-size: 14px;
+  }
+
+  .logo-block__phone-separator {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal {
+    &__window {
+      width: 276px;
+    }
+
+    &__title {
+      height: 42px;
+      padding-top: 10px;
+    }
+
+    &__content {
+      padding-top: 10px;
+      width: 290px;
+    }
+
+    &__header {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__text {
+      margin-top: 10px;
+    }
+
+    &__input {
+      display: block;
+      margin: 0 auto 10px;
+      width: 240px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu-items {
+    display: none;
+  }
+
+  .logo-block {
+    background: #f4f4f4;
+    margin-bottom: 0;
+    padding: 14px 0;
+
+    &__menu-mini {
+      background: url('../../public/icons/menu_mobile.png') no-repeat center;
+      background-size: 23px 17px;
+      cursor: pointer;
+      display: inline-block;
+      height: 17px;
+      margin-right: 11px;
+      vertical-align: middle;
+      width: 23px;
+    }
+
+    &__logo {
+      background: $btn-color url('../../public/icons/logo_mobile.png') no-repeat center;
+      background-size: 21px 16px;
+      border-radius: 3px;
+      display: inline-block;
+      height: 29px;
+      vertical-align: middle;
+      width: 29px;
+    }
+
+    &__phones {
+      display: inline-block;
+      margin-left: 30px;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    &__phone {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-transform: uppercase;
+    }
+
+    &__phone-num {
+      font-family: 'Roboto Condensed';
+      font-weight: 900;
+    }
+
+    &__phone-separator {
+      display: none;
+    }
+
+    &__btn-call {
+      height: 29px;
+      margin-left: 6px;
+      padding: 7px;
+      vertical-align: middle;
+      width: 29px;
+
+      &::before {
+        background-size: 14px 15px;
+        left: 7px;
+        top: 7px;
+      }
+    }
+
+    &__btn-text {
+      display: none;
+    }
+  }
+
+  .main {
+    height: 450px;
+    padding-top: 45px;
+
+    &__box {
+      display: none;
+    }
+
+    &__form-block {
+      margin: auto;
+      padding: 0;
+    }
+
+    &__title {
+      color: #ff9d00;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 21px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    &__delivery {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 37px;
+      text-align: center;
+    }
+
+    &__input {
+      display: block;
+      height: 47px;
+      margin: 0 auto 13px;
+      padding: 15px 0 0 70px;
+      width: 290px;
+    }
+
+    &__submit {
+      display: block;
+      height: 51px;
+      margin: 0 auto 14px;
+      padding: 17px 0 0 29px;
+      width: 180px;
+    }
+
+    &__form {
+      padding: 0;
+      width: 100%;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__form-title {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    &__form-bonus {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 18px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    &__note {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 13px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
