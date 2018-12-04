@@ -1,0 +1,94 @@
+.comment {
+  background-color: #f4f4f4;
+
+  &__title {
+    color: #313131;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 55px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__wavy-line {
+    background: url('../../public/icons/wavy-line.png') no-repeat;
+    height: 6px;
+    margin: 14px auto 30px;
+    width: 46px;
+  }
+
+  &__wrapper {
+    margin: auto;
+    position: relative;
+    width: 893px;
+    z-index: 1;
+  }
+
+  &__item {
+    background-color: #fff;
+    border: 1px solid rgba(#000, .1);
+    margin: 0 12px;
+    max-width: 274px;
+    position: relative;
+    height: 377px;
+
+    &:hover {
+      border: 1px solid #313131;
+    }
+  }
+
+  &__img {
+    height: 360px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 256px;
+
+    &_one {
+      background: url('../../public/img/comments/comment-1.jpg') no-repeat;
+    }
+
+    &_two {
+      background: url('../../public/img/comments/comment-2.jpg') no-repeat;
+    }
+
+    &_tree {
+      background: url('../../public/img/comments/comment-3.jpg') no-repeat;
+    }
+
+    &_four {
+      background: url('../../public/img/comments/comment-4.jpg') no-repeat;
+    }
+  }
+
+  &__buttons {
+    margin: auto;
+    position: relative;
+    transform: translateY(-220px);
+    width: 938px;
+    z-index: 0;
+  }
+
+  &__btn-prev {
+    background: url('../../public/icons/prev-comment.png') no-repeat;
+    display: inline-block;
+    height: 47px;
+    width: 10px;
+  }
+
+  &__btn-next {
+    background: url('../../public/icons/next-comment.png') no-repeat;
+    display: inline-block;
+    height: 47px;
+    position: absolute;
+    right: 0;
+    width: 10px;
+  }
+
+  &__btn-stop {
+    display: none;
+  }
+}

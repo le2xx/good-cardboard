@@ -21,8 +21,21 @@ const slider = tns({
   "gutter": 5,
 });
 
+const commentSlider =  tns({
+  "container": "#comment-slider",
+  "items": 3,
+  "nav": false,
+  "controlsContainer": "#comment-controls",
+  "autoplay": true,
+  "autoplayButton": "#comment-toggle",
+  "speed": 1000,
+  // "autoWidth": true
+  // "fixedWidth": 274
+});
+
 window.onload = () => {
   slider;
+  commentSlider;
 };
 
 const btnPrev = document.querySelector('.slider__btn-prev');
