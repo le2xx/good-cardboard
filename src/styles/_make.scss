@@ -64,6 +64,7 @@
     border: 0;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
     display: block;
     font-size: 15px;
     font-weight: 500;
@@ -75,6 +76,10 @@
 
     &:focus {
       outline: none;
+    }
+
+    &:hover {
+      background-color: lighten($btn-color, 10%);
     }
   }
 
