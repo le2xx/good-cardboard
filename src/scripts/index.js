@@ -29,8 +29,6 @@ const commentSlider =  tns({
   "autoplay": true,
   "autoplayButton": "#comment-toggle",
   "speed": 1000,
-  // "autoWidth": true
-  // "fixedWidth": 274
 });
 
 window.onload = () => {
@@ -44,3 +42,9 @@ const btnThumb = document.querySelector('.slider__thumbnails');
 btnPrev.addEventListener('click', () => setTimeout(() => slider.play(), 1000));
 btnNext.addEventListener('click', () => setTimeout(() => slider.play(), 1000));
 btnThumb.addEventListener('click', () => setTimeout(() => slider.play(), 1000));
+
+
+const commentPrev = document.querySelector('.comment__btn-prev');
+const commentNext = document.querySelector('.comment__btn-next');
+commentPrev.addEventListener('click', () => setTimeout(() => commentSlider.play(), 1000));
+commentNext.addEventListener('click', () => setTimeout(() => commentSlider.play(), 1000));

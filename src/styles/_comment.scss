@@ -1,5 +1,6 @@
 .comment {
   background-color: #f4f4f4;
+  display: none;
 
   &__title {
     color: #313131;
@@ -21,7 +22,7 @@
   &__wrapper {
     margin: auto;
     position: relative;
-    width: 893px;
+    width: 894px;
     z-index: 1;
   }
 
@@ -76,16 +77,16 @@
     background: url('../../public/icons/prev-comment.png') no-repeat;
     display: inline-block;
     height: 47px;
-    width: 10px;
+    width: 30px;
   }
 
   &__btn-next {
-    background: url('../../public/icons/next-comment.png') no-repeat;
+    background: url('../../public/icons/next-comment.png') no-repeat right;
     display: inline-block;
     height: 47px;
     position: absolute;
     right: 0;
-    width: 10px;
+    width: 30px;
   }
 
   &__btn-stop {

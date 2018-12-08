@@ -1,0 +1,136 @@
+.make {
+  background: #373737 url('../../public/img/make-ground.jpg') no-repeat center;
+  height: 409px;
+  padding-top: 64px;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    background-color: $fogging;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+
+    &-span {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  &__form {
+    display: block;
+    margin: 17px auto 0;
+    width: fit-content;
+  }
+
+  &__input {
+    border: 0;
+    border-radius: 5px;
+    color: #373737;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 56px;
+    line-height: 14px;
+    margin: auto;
+    outline: none;
+    text-align: center;
+    width: 365px;
+  }
+
+  &__button {
+    background: #ff9d00;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 56px;
+    line-height: 15px;
+    margin: 12px auto 0;
+    outline: none;
+    width: 180px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__note {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 9px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .make {
+    height: 375px;
+    padding-top: 45px;
+
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 20px;
+
+      &-span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 30px;
+      margin-top: 33px;
+    }
+
+    &__input {
+      font-size: 13px;
+      font-weight: 300;
+      height: 47px;
+      line-height: 13px;
+      width: 290px;
+    }
+
+    &__button {
+      font-size: 15px;
+      font-weight: 500;
+      height: 51px;
+      line-height: 15px;
+      margin-top: 13px;
+      width: 180px;
+    }
+
+    &__note {
+      margin-top: 14px;
+    }
+  }
+}
