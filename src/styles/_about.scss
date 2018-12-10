@@ -1,0 +1,127 @@
+.about {
+  background: #f4f4f4;
+  padding: 42px 0 40px;
+
+  &__title {
+    color: #f39003;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__text {
+    color: #373737;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    margin: 11px 0 29px;
+  }
+
+  &__item {
+    width: 294px;
+    height: 132px;
+    background-color: #fff;
+    position: relative;
+    padding: 0 10px;
+    margin: 15px auto;
+    border-radius: 5px;
+  }
+
+  &__img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 55px;
+    height: 55px;
+
+    &_1 {
+      background: url('../../public/icons/about/1.png') no-repeat;
+      background-size: contain;
+    }
+
+    &_2 {
+      background: url('../../public/icons/about/2.png') no-repeat;
+      background-size: contain;
+    }
+
+    &_3 {
+      background: url('../../public/icons/about/3.png') no-repeat;
+      background-size: contain;
+    }
+
+    &_4 {
+      background: url('../../public/icons/about/4.png') no-repeat;
+      background-size: contain;
+    }
+
+    &_5 {
+      background: url('../../public/icons/about/5.png') no-repeat;
+      background-size: contain;
+    }
+
+    &_6 {
+      background: url('../../public/icons/about/6.png') no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__item-info {
+    width: 202px;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 19px;
+  }
+
+  &__item-title {
+    color: #373737;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  &__item-text {
+    color: #373737;
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 15px 0 36px;
+
+    &__title {
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    &__text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      margin: 5px 0 15px;
+    }
+
+    &__item {
+      width: 290px;
+      height: 113px;
+      margin: 4px auto;
+      border-radius: 3px;
+    }
+
+    &__img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
