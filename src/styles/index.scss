@@ -2,13 +2,15 @@
 @import '../../node_modules/tiny-slider/dist/tiny-slider.css';
 
 @import 'variables';
-@import 'header.component';
-@import 'main.component';
-@import 'modal.component';
+@import 'reuse';
+@import 'header';
+@import 'main';
+@import 'modal';
 @import 'slider';
 @import 'comment';
 @import 'make';
 @import 'about';
+@import 'clients';
 @import 'media';
 
 body {

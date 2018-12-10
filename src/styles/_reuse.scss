@@ -1,0 +1,15 @@
+.component-title {
+  color: $title-text;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.component-wavy-line {
+  background: url('../../public/icons/wavy-line.png') no-repeat;
+  height: 6px;
+  margin: 14px auto 30px;
+  width: 46px;
+}
