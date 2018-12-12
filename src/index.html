@@ -189,6 +189,21 @@
   </div>
 </app-about>
 
+<app-make>
+  <div class="make">
+    <div class="make__title">
+      Получите индивидуальное предложение<br>
+      <span class="make__title-span">на производство и поставку изделий</span>
+    </div>
+    <div class="make__text">Введите ваш номер телефона:</div>
+    <form action="#" class="make__form">
+      <input name="phone" type="text" class="make__input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+      <button type="submit" class="make__button">Оставить заявку!</button>
+    </form>
+    <div class="make__note">*Минимальный заказ 500шт</div>
+  </div>
+</app-make>
+
 <app-slider>
   <div class="slider">
     <div class="container">
@@ -353,20 +368,44 @@
   </div>
 </app-comment>
 
-<app-make>
-  <div class="make">
-    <div class="make__title">
-      Получите индивидуальное предложение<br>
-      <span class="make__title-span">на производство и поставку изделий</span>
+<app-contacts>
+  <div class="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="contacts__block">
+            <div class="contacts__title">контакты</div>
+            <div class="contacts__icon contacts__icon_address"></div>
+            <div class="contacts__text">
+              <span class="contacts__header">Адрес офиса</span>
+              г. Уфа, Проспект октября, 46
+              <span class="contacts__header">Адрес склада</span>
+              г. Уфа, ул. Майкопская, 65/2
+            </div>
+
+            <div class="contacts__icon contacts__icon_phone"></div>
+            <div class="contacts__text">
+              <span class="contacts__header">Тел. отдела продаж:</span>
+              8 (347) 271-54-28<br>
+              8 (937) 363-30-00
+            </div>
+
+            <button class="contacts__btn">Заказать звонок</button>
+
+            <div class="contacts__icon contacts__icon_mail"></div>
+            <div class="contacts__text">
+              <span class="contacts__header">Е-mail</span>
+              urals.karton@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="make__text">Введите ваш номер телефона:</div>
-    <form action="#" class="make__form">
-      <input name="phone" type="text" class="make__input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-      <button type="submit" class="make__button">Оставить заявку!</button>
-    </form>
-    <div class="make__note">*Минимальный заказ 500шт</div>
   </div>
-</app-make>
+
+  <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+  <div class="contacts__map" id="map"></div>
+</app-contacts>
 
 </body>
 </html>

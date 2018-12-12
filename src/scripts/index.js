@@ -1,5 +1,6 @@
 import '../styles/index.scss';
 import {tns} from 'tiny-slider';
+import ymaps from 'ymaps';
 
 const modalWindow = document.querySelector('.modal');
 const modalWindowClose = document.querySelector('.modal__close');
@@ -21,7 +22,7 @@ const slider = tns({
   "gutter": 5,
 });
 
-const commentSlider =  tns({
+const commentSlider = tns({
   "container": "#comment-slider",
   "items": 3,
   "nav": false,
@@ -48,3 +49,26 @@ const commentPrev = document.querySelector('.comment__btn-prev');
 const commentNext = document.querySelector('.comment__btn-next');
 commentPrev.addEventListener('click', () => setTimeout(() => commentSlider.play(), 1000));
 commentNext.addEventListener('click', () => setTimeout(() => commentSlider.play(), 1000));
+
+
+ymaps.load().then(maps => {
+  const myMap = new maps.Map('map', {
+    center: [54.752656, 56.002053],
+    zoom: 17,
+    controls: ['zoomControl']
+  });
+
+  const myPlacemark = new maps.Placemark(myMap.getCenter(), {
+    hintContent: 'Добрый картон',
+    balloonContent: 'Добрый картон<br>г. Уфа, Проспект октября, 46',
+  }, {
+    iconLayout: 'default#image',
+    iconImageHref: '../../public/icons/balloon.png',
+    iconImageSize: [64, 64],
+    iconImageOffset: [-32, -64]
+  });
+
+  myMap.behaviors.disable('scrollZoom');
+  myMap.geoObjects.add(myPlacemark);
+})
+  .catch(error => console.log('Failed to load Yandex Maps', error));
