@@ -1,0 +1,21 @@
+.bottom {
+  background: $bottom-color;
+  height: 88px;
+  position: relative;
+
+  &__title {
+    bottom: 0;
+    color: $white;
+    font-size: 13px;
+    font-weight: 300;
+    height: fit-content;
+    left: 0;
+    line-height: 17px;
+    margin: auto;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fit-content;
+  }
+}
