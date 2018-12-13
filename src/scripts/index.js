@@ -51,7 +51,7 @@ commentPrev.addEventListener('click', () => setTimeout(() => commentSlider.play(
 commentNext.addEventListener('click', () => setTimeout(() => commentSlider.play(), 1000));
 
 
-ymaps.load().then(maps => {
+ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then(maps => {
   const myMap = new maps.Map('map', {
     center: [54.752656, 56.002053],
     zoom: 17,
