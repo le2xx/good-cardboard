@@ -106,3 +106,27 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .header__menu-item {
+    font-size: 10px;
+  }
+
+  .header__item-separator {
+    height: 20px;
+    margin: 5px;
+  }
+
+  .logo-block__phones {
+    padding-left: 0;
+  }
+
+  .logo-block__phone {
+    display: block;
+    font-size: 14px;
+  }
+
+  .logo-block__phone-separator {
+    display: none;
+  }
+}

@@ -4,68 +4,6 @@
   }
 }
 
-@media (max-width: 992px) {
-  .header__menu-item {
-    font-size: 10px;
-  }
-
-  .header__item-separator {
-    height: 20px;
-    margin: 5px;
-  }
-
-  .logo-block__phones {
-    padding-left: 0;
-  }
-
-  .logo-block__phone {
-    display: block;
-    font-size: 14px;
-  }
-
-  .logo-block__phone-separator {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
-  .modal {
-    &__window {
-      width: 276px;
-    }
-
-    &__title {
-      height: 42px;
-      padding-top: 10px;
-    }
-
-    &__content {
-      padding-top: 10px;
-      width: 290px;
-    }
-
-    &__header {
-      font-size: 18px;
-      line-height: 18px;
-    }
-
-    &__text {
-      margin-top: 10px;
-    }
-
-    &__input {
-      display: block;
-      margin: 0 auto 10px;
-      width: 240px;
-    }
-
-    &__btn {
-      display: block;
-      margin: 0 auto 10px;
-    }
-  }
-}
-
 @media (max-width: 768px) {
   .header__menu-items {
     display: none;
@@ -222,6 +160,4 @@
       text-align: center;
     }
   }
-
-
 }

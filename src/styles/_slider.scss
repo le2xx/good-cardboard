@@ -1,6 +1,6 @@
 .slider {
   height: 492px;
-  display: none;
+  //display: none;
   margin-top: 87px;
 
   &__wrapper {
@@ -140,5 +140,11 @@
   &::before {
     content: '';
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    display: none;
   }
 }

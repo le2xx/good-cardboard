@@ -1,6 +1,6 @@
 .comment {
   background-color: #f4f4f4;
-  display: none;
+  // display: none;
 
   &__title {
     color: #313131;
@@ -90,6 +90,12 @@
   }
 
   &__btn-stop {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .comment {
     display: none;
   }
 }

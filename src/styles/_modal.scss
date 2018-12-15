@@ -110,3 +110,41 @@
     text-align: center;
   }
 }
+
+@media (max-width: 800px) {
+  .modal {
+    &__window {
+      width: 276px;
+    }
+
+    &__title {
+      height: 42px;
+      padding-top: 10px;
+    }
+
+    &__content {
+      padding-top: 10px;
+      width: 290px;
+    }
+
+    &__header {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__text {
+      margin-top: 10px;
+    }
+
+    &__input {
+      display: block;
+      margin: 0 auto 10px;
+      width: 240px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto 10px;
+    }
+  }
+}
