@@ -1,0 +1,263 @@
+.detail {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    background: $black;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+
+  &__content {
+    bottom: 20px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 25px;
+    max-width: 1157px;
+    max-height: 1000px;
+  }
+
+  &__modal {
+    margin: 17px 17px 0 0;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+  }
+
+  &__close {
+    background: url('../../public/icons/modal_close.png') no-repeat;
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+  }
+
+  &__header {
+    height: 68px;
+    background-color: #ff9d00;
+    padding: 21px;
+    display: block;
+    color: $white;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    background: $white;
+    color: #373737;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    padding: 33px;
+    text-align: justify;
+
+    &_span {
+      font-weight: 700;
+      padding: 0;
+    }
+  }
+
+  &__prod {
+    padding: 16px 8px;
+    background-color: #f4f4f4;
+  }
+
+  &__item {
+    max-width: 342px;
+    height: 103px;
+    background-color: $white;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin: 9px auto;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &_1 {
+      background: url('../../public/icons/modal/1.png') no-repeat;
+    }
+
+    &_2 {
+      background: url('../../public/icons/modal/2.png') no-repeat;
+    }
+
+    &_3 {
+      background: url('../../public/icons/modal/3.png') no-repeat;
+    }
+
+    &_4 {
+      background: url('../../public/icons/modal/4.png') no-repeat;
+    }
+
+    &_5 {
+      background: url('../../public/icons/modal/5.png') no-repeat;
+    }
+
+    &_6 {
+      background: url('../../public/icons/modal/6.png') no-repeat;
+    }
+  }
+
+  &__name {
+    color: #373737;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    display: inline-block;
+    max-width: 194px;
+    vertical-align: middle;
+  }
+
+  &__form-block {
+    background: #2b2b2b url('../../public/img/form-block-ground.jpg') no-repeat;
+    height: 280px;
+    text-align: center;
+    padding-top: 41px;
+  }
+
+  &__form-title {
+    color: $white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &_span {
+      font-size: 24px;
+    }
+  }
+
+  &__form-text {
+    color: $white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 23px 0 17px;
+  }
+
+  &__input {
+    width: 365px;
+    height: 56px;
+    color: #373737;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 56px;
+    border-radius: 5px;
+    border: 0 solid;
+    padding: 0 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    outline: none;
+  }
+
+  &__form-btn {
+    @extend .component-button;
+    width: 180px;
+    height: 56px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__note {
+    color: $white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail {
+
+    &__header {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 10px;
+      height: 45px;
+    }
+
+    &__text {
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    &__item {
+      width: 254px;
+      height: 80px;
+    }
+
+    &__name {
+      max-width: 160px;
+      font-size: 13px;
+    }
+
+    &__form-block {
+      padding-top: 15px;
+      height: 240px;
+    }
+
+    &__form-title {
+      font-size: 20px;
+      line-height: 20px;
+
+      &_span {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+    &__form-text {
+      font-size: 12px;
+      margin: 10px 0;
+    }
+
+    &__input {
+      width: 260px;
+      margin: 0 0 10px;
+      height: 45px;
+    }
+
+    &__form-btn {
+      height: 45px;
+    }
+
+    &__note {
+      font-size: 10px;
+      line-height: 10px;
+      margin-top: 6px;
+    }
+  }
+}
