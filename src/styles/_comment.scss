@@ -20,56 +20,22 @@
   }
 
   &__wrapper {
-    margin: auto;
+    margin: 0 auto 66px;
+    max-width: 877px;
     position: relative;
-    width: 894px;
     z-index: 1;
   }
 
-  &__item {
-    background-color: #fff;
-    border: 1px solid rgba(#000, .1);
-    margin: 0 12px;
-    max-width: 274px;
-    position: relative;
-    height: 377px;
-
-    &:hover {
-      border: 1px solid #313131;
-    }
-  }
-
   &__img {
-    height: 360px;
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 256px;
-
-    &_one {
-      background: url('../../public/img/comments/comment-1.jpg') no-repeat;
-    }
-
-    &_two {
-      background: url('../../public/img/comments/comment-2.jpg') no-repeat;
-    }
-
-    &_tree {
-      background: url('../../public/img/comments/comment-3.jpg') no-repeat;
-    }
-
-    &_four {
-      background: url('../../public/img/comments/comment-4.jpg') no-repeat;
-    }
+    max-width: 310px;
   }
 
   &__buttons {
     margin: auto;
-    position: relative;
-    transform: translateY(-220px);
-    width: 938px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     z-index: 0;
   }
 
@@ -77,6 +43,7 @@
     background: url('../../public/icons/prev-comment.png') no-repeat;
     display: inline-block;
     height: 47px;
+    transform: translateX(-25px);
     width: 30px;
   }
 
@@ -86,6 +53,7 @@
     height: 47px;
     position: absolute;
     right: 0;
+    transform: translateX(30px);
     width: 30px;
   }
 
@@ -94,8 +62,8 @@
   }
 }
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
   .comment {
     display: none;
   }
-}
+}*/

@@ -35,6 +35,13 @@ const commentSlider = tns({
   "autoplay": true,
   "autoplayButton": "#comment-toggle",
   "speed": 1000,
+  "autoHeight": true,
+  "gutter": 28,
+  /*"responsive": {
+    640: {
+      "items": 1
+    }
+  }*/
 });
 
 window.onload = () => {
@@ -77,3 +84,11 @@ ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then(maps => {
   myMap.geoObjects.add(myPlacemark);
 })
   .catch(error => console.log('Failed to load Yandex Maps', error));
+
+//window.onresize= function(){
+//  window.innerWidth <= 1000 ? alert(window.innerWidth) : '';
+//};
+
+//window.onresize = () => {
+//  commentSlider.updateSliderHeight();
+//};
