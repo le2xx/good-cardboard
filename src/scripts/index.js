@@ -7,12 +7,12 @@ const modalWindowClose = document.querySelector('.modal__close');
 const modalDetail = document.querySelector('.detail');
 const modalDetailClose = document.querySelector('.detail__close');
 const btnCall = document.querySelector('.logo-block__btn-call');
-const btnDetail = document.querySelectorAll('.products__btn-detail');
+const btnDetail = Array.from(document.querySelectorAll('.products__btn-detail'));
 
 modalWindowClose.addEventListener('click', () => modalWindow.style.display = 'none');
 modalDetailClose.addEventListener('click', () => modalDetail.style.display = 'none');
 btnCall.addEventListener('click', () => modalWindow.style.display = 'block');
-btnDetail.forEach(item => item.addEventListener('click', () => modalDetail.style.display = 'block'));
+btnDetail.map(item => item.addEventListener('click', () => modalDetail.style.display = 'block'));
 
 const slider = tns({
   "container": "#customize",
@@ -36,6 +36,7 @@ const commentSlider = tns({
   "autoplayButton": "#comment-toggle",
   "speed": 1000,
   "autoHeight": true,
+  "mouseDrag": true,
   "gutter": 28,
   /*"responsive": {
     640: {
