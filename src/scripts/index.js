@@ -14,40 +14,38 @@ modalDetailClose.addEventListener('click', () => modalDetail.style.display = 'no
 btnCall.addEventListener('click', () => modalWindow.style.display = 'block');
 btnDetail.map(item => item.addEventListener('click', () => modalDetail.style.display = 'block'));
 
-const slider = tns({
-  "container": "#customize",
-  "items": 1,
-  "controlsContainer": "#customize-controls",
-  "navContainer": "#customize-thumbnails",
-  "navAsThumbnails": true,
-  "autoplay": true,
-  "autoplayButton": "#customize-toggle",
-  "swipeAngle": false,
-  "speed": 1000,
-  "gutter": 5,
-});
-
-const commentSlider = tns({
-  "container": "#comment-slider",
-  "items": 3,
-  "nav": false,
-  "controlsContainer": "#comment-controls",
-  "autoplay": true,
-  "autoplayButton": "#comment-toggle",
-  "speed": 1000,
-  "autoHeight": true,
-  "mouseDrag": true,
-  "gutter": 28,
-  /*"responsive": {
-    640: {
-      "items": 1
-    }
-  }*/
-});
-
 window.onload = () => {
-  slider;
-  commentSlider;
+  const slider = tns({
+    "container": "#customize",
+    "items": 1,
+    "controlsContainer": "#customize-controls",
+    "navContainer": "#customize-thumbnails",
+    "navAsThumbnails": true,
+    "autoplay": true,
+    "autoplayButton": "#customize-toggle",
+    "swipeAngle": false,
+    "speed": 1000,
+    "gutter": 5,
+  });
+
+  const commentSlider = tns({
+    "container": "#comment-slider",
+    "items": 1,
+    "nav": false,
+    "controlsContainer": "#comment-controls",
+    "autoplay": true,
+    "autoplayButton": "#comment-toggle",
+    "speed": 1000,
+    "autoHeight": true,
+    "mouseDrag": true,
+    "gutter": 2,
+    "responsive": {
+      629: {
+        "items": 3,
+        "gutter": 28,
+      }
+    }
+  });
 };
 
 const btnPrev = document.querySelector('.slider__btn-prev');

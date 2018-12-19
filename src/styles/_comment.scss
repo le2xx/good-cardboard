@@ -1,9 +1,8 @@
 .comment {
-  background-color: #f4f4f4;
-  // display: none;
+  background-color: $comment-ground;
 
   &__title {
-    color: #313131;
+    color: $title-text;
     font-size: 27px;
     font-weight: 700;
     line-height: 27px;
@@ -62,8 +61,38 @@
   }
 }
 
-/*@media (max-width: 1000px) {
+@media (max-width: 628px) {
   .comment {
-    display: none;
+    padding: 36px 0 40px;
+
+    &__title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 24px;
+      margin: 0 0 15px;
+    }
+
+    &__wavy-line {
+      display: none;
+    }
+
+    &__wrapper {
+      margin-bottom: 0;
+      max-width: 305px;
+    }
+
+    &__btn-prev {
+      background: $btn-color url('../../public/icons/prev-hovered.png') no-repeat center;
+      height: 78px;
+      transform: translateX(0);
+      width: 22px;
+    }
+
+    &__btn-next {
+      background: $btn-color url('../../public/icons/next-hovered.png') no-repeat center;
+      height: 78px;
+      transform: translateX(0);
+      width: 22px;
+    }
   }
-}*/
+}
